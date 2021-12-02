@@ -1,0 +1,53 @@
+                                                  SCAN CENTER MANAGEMENT SYSTEM
+
+     LANGUAGES USED:PYTHON AND MYSQL
+
+PYTHON:
+   TWO LOGINS:
+     ADMINISTRATOR USERNAME AND PASSWORD:admin
+     DOCTOR USERNAME AND PASSWORD:doctor
+
+MYSQL:
+     create the database and the tables in your mysql as given below 
+     change the password of sql in python coding to your mysql window password
+     MYSQL DATABASE NAME:mdba
+     MYSQL PATIENT TABLE:appo
+     MYSQL DOCTOR TABLE:doct
+
+RUNNING THE PROGRAM:
+     GO TO LOGIN PAGE AND GIVE RUN OPTION
+
+*****
+appo:
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| name        | varchar(50) | YES  |     | NULL    |       |
+| dob            | varchar(50) | YES  |     | NULL    |       |
+| gender      | varchar(50) | YES  |     | NULL    |       |
+| address     | varchar(50) | YES  |     | NULL    |       |
+| ph_num      | bigint      | YES  |     | NULL    |       |
+| reg_num     | bigint      | NO   | PRI | NULL    |       |
+| reg_date    | varchar(50) | YES  |     | NULL    |       |
+| hosp_ref_by | varchar(50) | YES  |     | NULL    |       |
+| test_date   | varchar(50) | YES  |     | NULL    |       |
+| test_type   | varchar(50) | YES  |     | NULL    |       |
+| doctor      | varchar(50) | YES  |     | NULL    |       |
+| fees        | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+doct:
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| name          | varchar(50) | YES  |     | NULL    |       |
+| dob           | varchar(20) | YES  |     | NULL    |       |
+| gender        | varchar(30) | YES  |     | NULL    |       |
+| address       | varchar(50) | YES  |     | NULL    |       |
+| ph_num        | bigint      | YES  |     | NULL    |       |
+| teresa_id     | bigint      | YES  |     | NULL    |       |
+| qualification | varchar(50) | YES  |     | NULL    |       |
+| specialist    | varchar(50) | YES  |     | NULL    |       |
+| email         | varchar(50) | YES  |     | NULL    |       |
+| med_license   | varchar(10) | NO   | PRI | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
